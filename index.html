@@ -1,0 +1,132 @@
+ <!doctype html>
+
+<html lang="en"><head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JQuery Functions</title>
+
+<style>
+    
+
+
+    #button{
+    text-align: center;
+    border: 5px solid green;
+    background-color:red;
+}
+#content {
+    text-align: center;
+    border:5px solid yellow;
+    padding: 10px 0;
+    *display: none;}
+</style>
+
+
+
+
+  </head>
+  <body>
+     <section class="idSelectors">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center div1">
+            <p>JQuery Function practice</p>
+            <button id="id_s" class="btn btn-success">Select Id</button>
+            <button class="btn btn-danger cl_s">Select class</button>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <h1 id="h1" >lorem ipsum dolar.</h1>
+    <button type="button" class="btn">show</button>
+     <button type="button" class="btn2">hide</button>
+      <button type="button" class="btn3">Toggle</button>
+
+
+        <button type="button" id="btn4">fadeIn</button>
+     <button type="button" id="btn5">fadeOut</button>
+      <button type="button" id="btn6"> fadeToggle</button>
+      <button type="button" id="btn7">fadeTo</button>
+
+
+
+      <div id ="button">click me</div>
+      <div id="content"> lorem ipsum dolar sit.</div>
+
+      <p> this is hasan</p>
+      <p>this is jubraz</p>
+      <p> this is fahad</p>
+      <p>this is joy</p>
+
+     
+    
+    <!-- jQuery links-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+    $("#id_s").click(function()
+    {
+    alert("this is an example of id selector");
+    });
+    $(".cl_s").click(function()
+    {
+    alert("this is an example of class selector");
+    });
+    $(".btn").click(function(){
+        $("h1").show(1000);
+    });
+     $(".btn2").click(function(){
+        $("h1").hide(1000);
+    });
+      $(".btn3").click(function(){
+        $("h1") .toggle("slow");
+    });
+
+
+        $("#btn4").click(function(){
+        $("#h1") .fadeIn();
+    });
+           $("#btn5").click(function(){
+        $("#h1") .fadeOut();
+    });
+               $("#btn6").click(function(){
+        $("#h1") .fadeToggle();
+    });
+                $("#btn7").click(function(){
+        $("#h1") .fadeTo(100,.5 );
+          });
+
+
+               $("#button").click(function(){
+        $("#content").slideToggle();
+
+
+    });
+            
+                    $("p").click(function(){
+        $(this).hide("fast");
+
+
+    });
+
+
+
+
+
+
+
+    });
+    
+    </script>
+
+    
+  
+</body></html>
